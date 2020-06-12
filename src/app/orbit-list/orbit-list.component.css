@@ -3,6 +3,10 @@
     color: #dd5;
 }
 
+.even {
+    background-color: lightgreen;
+}
+
 .warning {
     background-color: #da8a8a;
 }

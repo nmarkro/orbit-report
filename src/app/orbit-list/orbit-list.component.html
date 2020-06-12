@@ -7,7 +7,7 @@
       <th>Orbit Type</th>
       <th>Launch Date</th>
    </tr>
-   <tr *ngFor="let satellite of satellites">
+   <tr *ngFor="let satellite of satellites" [class.even]="satellites.indexOf(satellite) % 2 === 0">
        <th>{{satellite.name}}</th>
        <th [class.warning]="satellite.shouldShowWarning()">{{satellite.type}}</th>
        <th>{{satellite.operational}}</th>
